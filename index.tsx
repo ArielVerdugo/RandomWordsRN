@@ -7,9 +7,9 @@ import App from './App';
 import {name as appName} from './app.json';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import FirstScreen from './screens/FirstScreen';
+import FirstScreen from './src/screens/FirstScreen';
 import React from 'react';
-import SecondScreen from './screens/SecondScreen';
+import SecondScreen from './src/screens/SecondScreen';
 
 AppRegistry.registerComponent(appName, () => App);
 

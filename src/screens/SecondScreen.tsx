@@ -1,8 +1,8 @@
 import React, {useEffect} from 'react';
 import {Alert, StyleSheet, Text, View} from 'react-native';
 import {useDispatch, useSelector} from 'react-redux';
-import {saveWords} from './redux/Actions';
-import {getGeneratedWords} from './redux/WordsSelector';
+import {saveWords} from '../redux/Actions';
+import {getGeneratedWords} from '../redux/WordsSelector';
 
 export function SecondScreen() {
   const dispatch = useDispatch();
@@ -39,13 +39,13 @@ const saveValues = (dispatch: any) => {
   }
 };
 
-// generate random string
+// generate random words
 const getRandomString = () => {
   const randomLength = Math.floor(Math.random() * 15);
   const chars = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
   const charLength = chars.length;
-  var result = '';
-  for (var i = 0; i < randomLength; i++) {
+  let result = '';
+  for (let i = 0; i < randomLength; i++) {
     result += chars.charAt(Math.floor(Math.random() * charLength));
   }
   return result;

@@ -8,7 +8,7 @@
 import React from 'react';
 import {RootNavigator} from '.';
 import {Provider} from 'react-redux';
-import {Store} from './screens/redux/Store';
+import {Store} from './src/redux/Store';
 
 function App(): JSX.Element {
   return (
