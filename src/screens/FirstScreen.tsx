@@ -1,7 +1,7 @@
 import React from 'react';
 import {Button, StyleSheet, Text, View} from 'react-native';
 import {useSelector} from 'react-redux';
-import {getGeneratedWords} from './redux/WordsSelector';
+import {getGeneratedWords} from '../redux/WordsSelector';
 
 const FirstScreen = ({navigation}) => {
   const numberWords = useSelector(getGeneratedWords);
